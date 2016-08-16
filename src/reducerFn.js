@@ -32,7 +32,7 @@ export default function reducerFn(initialState, actions={}, reducer) {
         return {
           ...state,
           loading: false,
-          error: action.error,
+          error: action.error.message,
           syncing: false
         };
       case actionReset:
